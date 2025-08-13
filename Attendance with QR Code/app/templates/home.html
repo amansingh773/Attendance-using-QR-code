@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home</title>
+    <style>
+        h2{
+           color: rgb(85, 0, 255);
+           font-weight: bolder;
+           font-family: 'Times New Roman', Times, serif;
+           
+        }
+        h3{
+            color: blue;
+           font-weight: bolder;
+           font-family: cursive;
+        }
+        body{
+            background-color:#b994e9;
+        }
+        #id{
+            height: 250px;
+            width: 250px;
+
+        }
+       </style>
+</head>
+<body>
+    <center><h2>Welcome to QR Attendance System</h2>                                                                                                                                                                                        
+     
+        <h3>Scan the QR</h3>
+    
+    {%if QR%}
+    <img id="qr"  src="{{url_for('static',filename='/tempqr/qr_code.png')}}" alt=""></center>
+    {%endif%}
+   
+    </body>
+</html>
